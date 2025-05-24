@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="RUCspp" name="AmpEmulatorPlugin" projectType="audioplug"
+              pluginManufacturer="tfg" aaxIdentifier="tfg.AmpEmulatorPlugin"
+              headerPath="C:\Users\Javie\OneDrive\Escritorio\AmpEmulatorPlugin\Libraries\eigen-3.3.7;&#10;C:\Users\Javie\OneDrive\Escritorio\AmpEmulatorPlugin\Libraries\asiosdk_2.3.3_2019-06-14\common&#10;"
+              displaySplashScreen="1" jucerFormatVersion="1" jucerVersion="5.4.2">
+  <MAINGROUP id="njP0Ev" name="AmpEmulatorPlugin">
+    <GROUP id="{5974505C-1B21-9782-D09E-C49793B75A97}" name="Source">
+      <FILE id="sh0GSV" name="WaveNet.h" compile="0" resource="0" file="Source/WaveNet.h"/>
+      <FILE id="AcZs5t" name="WaveNetLoader.cpp" compile="1" resource="0"
+            file="Source/WaveNetLoader.cpp"/>
+      <FILE id="XVnE3R" name="WaveNetLoader.h" compile="0" resource="0" file="Source/WaveNetLoader.h"/>
+      <FILE id="yyHS1u" name="Activations.cpp" compile="1" resource="0" file="Source/Activations.cpp"/>
+      <FILE id="AWICVH" name="Activations.h" compile="0" resource="0" file="Source/Activations.h"/>
+      <FILE id="iZjd8X" name="Convolution.cpp" compile="1" resource="0" file="Source/Convolution.cpp"/>
+      <FILE id="yJtZlh" name="Convolution.h" compile="0" resource="0" file="Source/Convolution.h"/>
+      <FILE id="CJmdVw" name="ConvolutionLayer.cpp" compile="1" resource="0"
+            file="Source/ConvolutionLayer.cpp"/>
+      <FILE id="wMIEQr" name="ConvolutionLayer.h" compile="0" resource="0"
+            file="Source/ConvolutionLayer.h"/>
+      <FILE id="JUTJdL" name="ConvolutionStack.cpp" compile="1" resource="0"
+            file="Source/ConvolutionStack.cpp"/>
+      <FILE id="WeUqKO" name="ConvolutionStack.h" compile="0" resource="0"
+            file="Source/ConvolutionStack.h"/>
+      <FILE id="W8ZVC3" name="WaveNet.cpp" compile="1" resource="0" file="Source/WaveNet.cpp"/>
+      <FILE id="tgKVWZ" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="N0fK5L" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="otqARK" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="W6ICDn" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="C:\Users\Javie\OneDrive\Escritorio\AmpEmulatorPlugin\Libraries\eigen-3.3.7"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE-fork-5.4.2/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE-fork-5.4.2/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="/media/jodivaso/Files/NewProject/Libraries/Eigen-3.3.7;&#10;/media/jodivaso/Files/NewProject/Libraries/ASIO;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_plugin_client"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"
+               JUCE_ASIO="1"/>
+</JUCERPROJECT>
