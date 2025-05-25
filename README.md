@@ -2,7 +2,7 @@
 Este proyecto académico, [1], contiene la implementación de una aplicación *standalone* y plugin VST3 que emplea inteligencia artificial, para emular en tiempo real amplificadores y pedales de guitarra eléctrica (*overdrive*, distorsión y compresión). Implementado mediante el *framework* JUCE, empleando el modelo WaveNet de C++ llamado [WaveNetVA](https://github.com/damskaggep/WaveNetVA). Basado en los trabajos [2,3,6]. 
 
 #### Créditos
-Desarrollado originalmente como parte de mi [Trabajo Fin de Grado](https://zenodo.org/records/15490785) para la titulación de Ingeniería Informática de la Universidad de La Rioja (España), titulado *Aprendizaje profundo para la emulación en tiempo real de equipamiento de guitarra eléctrica con Raspberry Pi 5*. Basado conceptualmente en los repositorios [WaveNetVA](https://github.com/damskaggep/WaveNetVA) de Damskägg, Eero-Pekka y [SmartGuitarAmp](https://github.com/GuitarML/SmartGuitarAmp), de Keith Bloemer [4]. Agradezco mucho sus contribuciones a la comunidad, gracias a las cuales no solo he aprendido mucho, sino que he podido testear mi proyecto empleando sus plugins [5].
+Desarrollado originalmente como parte de mi [Trabajo Fin de Grado](https://zenodo.org/records/15490785) para la titulación de Ingeniería Informática de la Universidad de La Rioja (España), titulado *Aprendizaje profundo para la emulación en tiempo real de equipamiento de guitarra eléctrica con Raspberry Pi 5*. Basado conceptualmente en los repositorios [WaveNetVA](https://github.com/damskaggep/WaveNetVA) de Damskägg, Eero-Pekka y [SmartGuitarAmp](https://github.com/GuitarML/SmartGuitarAmp), de Keith Bloemer [4]. Hardware complementario desarrollado como plataforma de despliegue basado en [Proteus](https://www.youtube.com/watch?v=dFMsWW0uC7w), de Keith Bloemer, [7]. Agradezco mucho sus contribuciones a la comunidad, gracias a las cuales no solo he aprendido mucho, sino que he podido testear mi proyecto empleando sus plugins [5].
 
 ## Funcionamiento
 La aplicación cuenta con dos versiones para Windows/x86.
@@ -37,10 +37,10 @@ sudo apt-get libwebkit2gtk-4.0-dev
 Ir a la carpeta recién creada `./Builds/LinuxMakefile` y hacer `make`. Es necesario modificar el linkado de las dependencias desde el `Makefile` y poner `make config = Release`.
 
 ## Despliegue sobre Raspberry Pi 5
-La aplicación *standalone* para Linux/aarch64 se ha probado que funciona en tiempo real sobre [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/), con el sistema operativo por defecto, Raspberry OS. En el proyecto del que forma parte este repositorio, [1], se construye un pedal digital completamente funcional y se da un listado de los materiales y del circuito empleados. Mediante esta aplicación u otras, como [6,7], se puede construir fácilmente un pedal o amplificador casero totalmente operativo y con sonido de alta fidelidad.
+La aplicación *standalone* para Linux/aarch64 se ha probado que funciona en tiempo real sobre [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/), con el sistema operativo por defecto, Raspberry OS. En el proyecto del que forma parte este repositorio, [1], se construye un pedal digital completamente funcional y se da un listado de los materiales y del circuito empleados. Mediante esta aplicación u otras, como [6,7], se puede construir fácilmente un pedal o amplificador casero totalmente operativo y con sonido de alta fidelidad. La idea del pedal está basada en el pedal [Proteus](https://www.youtube.com/watch?v=dFMsWW0uC7w), de Keith Bloemer, [7].
 <p float="left">
-  <img src="pedal-2.png" width="300" />
-  <img src="pedal-1.png" width="280" /> 
+  <img src="pedal.png" height="300" />
+  <img src="pedal-circuit.png" width="280" /> 
 </p>
 
 ## Referencias
