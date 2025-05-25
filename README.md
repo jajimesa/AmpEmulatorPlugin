@@ -39,8 +39,8 @@ Ir a la carpeta recién creada `./Builds/LinuxMakefile` y hacer `make`. Es neces
 ## Despliegue sobre Raspberry Pi 5
 La aplicación *standalone* para Linux/aarch64 se ha probado que funciona en tiempo real sobre [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/), con el sistema operativo por defecto, Raspberry OS. En el proyecto del que forma parte este repositorio, [1], se construye un pedal digital completamente funcional y se da un listado de los materiales y del circuito empleados. Mediante esta aplicación u otras, como [6,7], se puede construir fácilmente un pedal o amplificador casero totalmente operativo y con sonido de alta fidelidad.
 <p float="left">
-  <img src="pedal-1.png" width="400" />
-  <img src="pedal-2.png" width="400" /> 
+  <img src="pedal-2.png" width="300" />
+  <img src="pedal-1.png" width="280" /> 
 </p>
 
 ## Referencias
