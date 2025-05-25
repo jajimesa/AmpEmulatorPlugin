@@ -1,8 +1,8 @@
 # AmpEmulatorPlugin
-Este proyecto académico contiene la implementación de una aplicación *standalone* y plugin VST3 que emplea inteligencia artificial, concretamente un modelo tipo WaveNet [1], para emular en tiempo real amplificadores y pedales de guitarra eléctrica (*overdrive*, distorsión y compresión). Implementado mediante el *framework* JUCE, empleando el modelo WaveNet de C++ llamado [WaveNetVA](https://github.com/damskaggep/WaveNetVA). Basado en los trabajos [1,2,5]. 
+Este proyecto académico, [1], contiene la implementación de una aplicación *standalone* y plugin VST3 que emplea inteligencia artificial, para emular en tiempo real amplificadores y pedales de guitarra eléctrica (*overdrive*, distorsión y compresión). Implementado mediante el *framework* JUCE, empleando el modelo WaveNet de C++ llamado [WaveNetVA](https://github.com/damskaggep/WaveNetVA). Basado en los trabajos [2,3,6]. 
 
 #### Créditos
-Desarrollado originalmente como parte de mi [Trabajo Fin de Grado](https://zenodo.org/records/15490785) para la titulación de Ingeniería Informática de la Universidad de La Rioja (España), titulado *Aprendizaje profundo para la emulación en tiempo real de equipamiento de guitarra eléctrica con Raspberry Pi 5*. Basado conceptualmente en los repositorios [WaveNetVA](https://github.com/damskaggep/WaveNetVA) de Damskägg, Eero-Pekka y [SmartGuitarAmp](https://github.com/GuitarML/SmartGuitarAmp), de Keith Bloemer [3]. Agradezco mucho sus contribuciones a la comunidad, gracias a las cuales no solo he aprendido mucho, sino que he podido testear mi proyecto empleando sus plugins [4].
+Desarrollado originalmente como parte de mi [Trabajo Fin de Grado](https://zenodo.org/records/15490785) para la titulación de Ingeniería Informática de la Universidad de La Rioja (España), titulado *Aprendizaje profundo para la emulación en tiempo real de equipamiento de guitarra eléctrica con Raspberry Pi 5*. Basado conceptualmente en los repositorios [WaveNetVA](https://github.com/damskaggep/WaveNetVA) de Damskägg, Eero-Pekka y [SmartGuitarAmp](https://github.com/GuitarML/SmartGuitarAmp), de Keith Bloemer [4]. Agradezco mucho sus contribuciones a la comunidad, gracias a las cuales no solo he aprendido mucho, sino que he podido testear mi proyecto empleando sus plugins [5].
 
 ## Funcionamiento
 La aplicación cuenta con dos versiones para Windows/x86.
@@ -34,14 +34,23 @@ Crear el MakeFile mediante JUCE. Instalar las siguientes dependencias:
 sudo apt-get install libtiff-dev
 sudo apt-get libwebkit2gtk-4.0-dev
 ```
-Ir a la carpeta recién creada `./Builds/LinuxMakefile` y hacer `make`. Es necesario modificar el linkado de las dependencias desde el `Makefile` y poner `make config = Release`. 
+Ir a la carpeta recién creada `./Builds/LinuxMakefile` y hacer `make`. Es necesario modificar el linkado de las dependencias desde el `Makefile` y poner `make config = Release`.
+
+## Despliegue sobre Raspberry Pi 5
+La aplicación *standalone* para Linux/aarch64 se ha probado que funciona en tiempo real sobre [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/), con el sistema operativo por defecto, Raspberry OS. En el proyecto del que forma parte este repositorio, [1], se construye un pedal digital completamente funcional y se da un listado de los materiales y del circuito empleados. Mediante esta aplicación u otras, como [6,7], se puede construir fácilmente un pedal o amplificador casero totalmente operativo y con sonido de alta fidelidad.
+<p float="left">
+  <img src="pedal-1.png" width="400" />
+  <img src="pedal-2.png" width="400" /> 
+</p>
 
 ## Referencias
-[1]	Wright, A. et al.: "Real-Time Guitar Amplifier Emulation with Deep Learning". *Applied Sciences* (2020). (https://doi.org/10.3390/app10030766)   
-[2]	Van den Oord, A. et al.: "WaveNet: A Generative Model for Raw Audio". *arXiv* (2016). (https://doi.org/10.48550/arXiv.1609.03499)   
-[3]	Bloemer, K.: PedalNetRT, GitHub (https://github.com/GuitarML/PedalNetRT). (2020).   
-[4]	Damskägg, E.-P.: WaveNetVA, GitHub (https://github.com/damskaggep/WaveNetVA). (2019).   
-[5]	Bloemer, K.: SmartPluginAmp, Github (https://github.com/GuitarML/SmartGuitarAmp). (2020).
+[1] Jiménez Santana, J.: "Aprendizaje profundo para la emulación en tiempo real de equipamiento de guitarra eléctrica con Raspberry Pi 5". *Zenodo* (2025). [DOI](https://doi.org/10.5281/zenodo.15490785)   
+[2]	Wright, A. et al.: "Real-Time Guitar Amplifier Emulation with Deep Learning". *Applied Sciences* (2020). [DOI](https://doi.org/10.3390/app10030766)   
+[3]	Van den Oord, A. et al.: "WaveNet: A Generative Model for Raw Audio". *arXiv* (2016). [DOI](https://doi.org/10.48550/arXiv.1609.03499)   
+[4]	Bloemer, K.: PedalNetRT, [GitHub](https://github.com/GuitarML/PedalNetRT). (2020).   
+[5]	Damskägg, E.-P.: WaveNetVA, [GitHub](https://github.com/damskaggep/WaveNetVA). (2019).   
+[6]	Bloemer, K.: SmartPluginAmp, [GitHub](https://github.com/GuitarML/SmartGuitarAmp). (2020).
+[7] Bloemer, K.: Proteus, [GitHub](https://github.com/GuitarML/Proteus). (2023).
 
 Autor: *Javier Jiménez Santana*   
 Tutores: *Jose Divasón Mallagaray, Silvano Nájera Canal*
