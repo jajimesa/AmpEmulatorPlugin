@@ -39,8 +39,8 @@ Ir a la carpeta recién creada `./Builds/LinuxMakefile` y hacer `make`. Es neces
 ## Despliegue sobre Raspberry Pi 5
 La aplicación *standalone* para Linux/aarch64 se ha probado que funciona en tiempo real sobre [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/), con el sistema operativo por defecto, Raspberry OS. En el proyecto del que forma parte este repositorio, [1], se construye un pedal digital completamente funcional y se da un listado de los materiales y del circuito empleados. Mediante esta aplicación u otras, como [6,7], se puede construir fácilmente un pedal o amplificador casero totalmente operativo y con sonido de alta fidelidad. La idea del pedal está basada en el pedal [Proteus](https://www.youtube.com/watch?v=dFMsWW0uC7w), de Keith Bloemer, [7].
 <p float="left">
-  <img src="pedal.png" height="220" />
-  <img src="pedal-circuit.png" height="220" /> 
+  <img src="pedal.png" height="230" />
+  <img src="pedal-circuit.png" height="230" /> 
 </p>
 
 ## Referencias
