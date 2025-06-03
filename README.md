@@ -42,7 +42,7 @@ sudo apt-get install libtiff-dev
 sudo apt-get libwebkit2gtk-4.0-dev
 ```
 
-Navigate to the newly created ./Builds/LinuxMakefile folder and run make. You’ll need to modify the dependency linking in the Makefile and set make config=Release.
+Navigate to the newly created `./Builds/LinuxMakefile` folder and run make. You’ll need to modify the dependency linking in the Makefile and set make config=Release.
 
 ## Deployment on Raspberry Pi 5
 
